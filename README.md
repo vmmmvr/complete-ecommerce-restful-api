@@ -2,6 +2,7 @@
 
 # Complete Ecommerce RESTful API
 
+<img src="./assets/graph.png" />
 </div>
 
 ### **Table of contents**
