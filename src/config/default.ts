@@ -1,14 +1,15 @@
-export default {
+require("dotenv").config();
+
+const config = {
   development: {
-    name: "Ecommerce RESTful API [Development]",
-    database: "",
+    appname: "Ecommerce API [development]",
   },
   test: {
-    name: "Ecommerce RESTful API [Test]",
-    database: "",
+    appname: "Ecommerce API [test]",
   },
   production: {
-    name: "Ecommerce RESTful API",
-    database: "",
+    appname: "Ecommerce API",
   },
 };
+
+export default config;
