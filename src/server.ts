@@ -4,9 +4,10 @@ import routes from "./API/V1/routes";
 const config =
   require("./config/default")["default"][process.env.NODE_ENV || "development"];
 
+log.info(config);
 app
-  .listen("4500", () => {
-    log.info(`${config.appname} is running on PORT 4500`);
+  .listen(config.port, () => {
+    log.info(`${config.appname} is running on PORT ${config.port}`);
 
     routes(app);
   })
