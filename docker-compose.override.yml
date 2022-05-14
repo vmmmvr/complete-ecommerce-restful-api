@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: ecom
+    restart: always
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    env_file: .env
+    environment:
+      - PORT=${PORT}
+    ports:
+      - 4500:4500

@@ -2,11 +2,10 @@
   "name": "complete-ecommerce",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "build/server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "ts-node   src/server.ts",
+    "build": "tsc -p .",
+    "start": "node   build/server.js",
     "dev": "tsnd --respawn --transpile-only src/server.ts"
   },
   "keywords": [],
