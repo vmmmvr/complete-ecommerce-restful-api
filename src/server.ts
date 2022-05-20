@@ -1,6 +1,6 @@
 import app from "./app/app";
 import log from "./utils/logger";
-import routes from "./API/V1/routes";
+import routes from "./API/V1/routes/customer";
 const config =
   require("./config/default")["default"][process.env.NODE_ENV || "development"];
 
